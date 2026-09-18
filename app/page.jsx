@@ -141,7 +141,7 @@ export default function Dashboard() {
           </div>
 
           {/* Prompt Bar Matching Reference Image */}
-          <div style={{ maxWidth: 440, marginTop: 14 }}>
+          <div style={{ width: '100%', maxWidth: 440, marginTop: 14 }}>
             <div
               className="sm-pinstripe-bar"
               onClick={() => typeof window !== 'undefined' && window.dispatchEvent(new CustomEvent('open-cmdk'))}
@@ -177,25 +177,25 @@ export default function Dashboard() {
           <div className="sm-hero-metrics-grid">
             <div>
               <span style={{ fontSize: 10, fontFamily: 'var(--font-mono)', color: '#64748B', textTransform: 'uppercase', letterSpacing: '0.06em' }}>TRACKED PORTFOLIO</span>
-              <div style={{ fontSize: 24, fontWeight: 800, fontFamily: 'var(--font-mono)', color: '#0F172A', marginTop: 2 }}>{totalProjects.toLocaleString('en-IN')}</div>
+              <div style={{ fontSize: 'clamp(20px, 3vw, 24px)', fontWeight: 800, fontFamily: 'var(--font-mono)', color: '#0F172A', marginTop: 2 }}>{totalProjects.toLocaleString('en-IN')}</div>
               <span style={{ fontSize: 11, color: '#64748B' }}>Central sector works</span>
             </div>
 
             <div>
               <span style={{ fontSize: 10, fontFamily: 'var(--font-mono)', color: '#64748B', textTransform: 'uppercase', letterSpacing: '0.06em' }}>SANCTIONED CAPITAL</span>
-              <div style={{ fontSize: 24, fontWeight: 800, fontFamily: 'var(--font-mono)', color: '#0F172A', marginTop: 2 }}>₹34.8L Cr</div>
+              <div style={{ fontSize: 'clamp(20px, 3vw, 24px)', fontWeight: 800, fontFamily: 'var(--font-mono)', color: '#0F172A', marginTop: 2 }}>₹34.8L Cr</div>
               <span style={{ fontSize: 11, color: '#64748B' }}>17 Union Ministries</span>
             </div>
 
             <div>
               <span style={{ fontSize: 10, fontFamily: 'var(--font-mono)', color: '#64748B', textTransform: 'uppercase', letterSpacing: '0.06em' }}>NET OVERRUN ESCALATION</span>
-              <div style={{ fontSize: 24, fontWeight: 800, fontFamily: 'var(--font-mono)', color: '#DC2626', marginTop: 2 }}>+₹4.92L Cr</div>
+              <div style={{ fontSize: 'clamp(20px, 3vw, 24px)', fontWeight: 800, fontFamily: 'var(--font-mono)', color: '#DC2626', marginTop: 2 }}>+₹4.92L Cr</div>
               <span style={{ fontSize: 11, color: '#DC2626' }}>+14.4% aggregate drift</span>
             </div>
 
             <div>
               <span style={{ fontSize: 10, fontFamily: 'var(--font-mono)', color: '#64748B', textTransform: 'uppercase', letterSpacing: '0.06em' }}>CRITICAL / HIGH FLAGGED</span>
-              <div style={{ fontSize: 24, fontWeight: 800, fontFamily: 'var(--font-mono)', color: '#EA580C', marginTop: 2 }}>{flaggedCount} Projects</div>
+              <div style={{ fontSize: 'clamp(20px, 3vw, 24px)', fontWeight: 800, fontFamily: 'var(--font-mono)', color: '#EA580C', marginTop: 2 }}>{flaggedCount} Projects</div>
               <span style={{ fontSize: 11, color: '#EA580C' }}>{criticalCount} Critical Stoppages</span>
             </div>
           </div>
@@ -308,7 +308,7 @@ export default function Dashboard() {
           </div>
 
           {/* Real Data Table with Zero-Clipping & High Density Layout */}
-          <div style={{ overflowX: 'auto' }}>
+          <div className="sm-table-scroll-wrapper">
             <table className="sm-table">
               <thead>
                 <tr>

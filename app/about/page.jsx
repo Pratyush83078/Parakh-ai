@@ -53,7 +53,7 @@ export default function About() {
 
   return (
     <div className="fade-in">
-      <div style={{ display: 'grid', gridTemplateColumns: '260px 1fr', gap: 32, alignItems: 'start' }}>
+      <div className="sm-about-layout">
         {/* Sticky Doc Sidebar */}
         <aside style={{ position: 'sticky', top: 24, background: 'var(--surface-subtle, #F8FAFC)', border: '1px solid var(--border-color, #E2E8F0)', borderRadius: 8, padding: 16 }}>
           <div style={{ paddingBottom: 12, borderBottom: '1px solid var(--border-color, #E2E8F0)', marginBottom: 12 }}>
@@ -128,7 +128,7 @@ export default function About() {
               with a machine learning <strong>Early Warning System</strong> (probabilistic forecast for the next 30 days).
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12, marginTop: 20 }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 140px), 1fr))', gap: 12, marginTop: 20 }}>
               {[
                 { num: '2,059', label: 'Active Projects' },
                 { num: '7,497', label: 'Project-Months' },
@@ -181,7 +181,7 @@ export default function About() {
               Government infrastructure demands mathematical precision alongside predictive capability.
             </p>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginTop: 18 }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: 16, marginTop: 18 }}>
               <div style={{ padding: 16, background: 'var(--surface-subtle, #F8FAFC)', border: '1px solid var(--border-color, #E2E8F0)', borderRadius: 6 }}>
                 <span className="sm-confidence-pill">📐 Deterministic Rules Engine</span>
                 <h3 style={{ fontSize: 14, fontWeight: 700, marginTop: 10, marginBottom: 4 }}>Where the Project Stands Today</h3>
@@ -212,7 +212,7 @@ export default function About() {
               As required by SIH Outcome (b), machine learning algorithms are benchmarked against traditional statistical baselines (Logistic Regression).
             </p>
 
-            <div style={{ marginTop: 16, overflowX: 'auto' }}>
+            <div className="sm-table-scroll-wrapper" style={{ marginTop: 16 }}>
               <table className="sm-table">
                 <thead>
                   <tr>
@@ -254,7 +254,7 @@ export default function About() {
               Full compliance across all primary and secondary evaluation deliverables.
             </p>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginTop: 16 }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: 12, marginTop: 16 }}>
               {OUTCOMES.map(({ label, status, note }) => (
                 <div key={label} style={{ display: 'flex', gap: 10, padding: 12, background: 'var(--surface-subtle, #F8FAFC)', border: '1px solid var(--border-color, #E2E8F0)', borderRadius: 6 }}>
                   <span style={{ fontSize: 14 }}>{status}</span>

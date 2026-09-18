@@ -357,7 +357,7 @@ function ProjectsContent() {
           </div>
         </div>
 
-        <div style={{ overflowX: 'auto' }}>
+        <div className="sm-table-scroll-wrapper">
           <table className="sm-table">
             <thead>
               <tr>

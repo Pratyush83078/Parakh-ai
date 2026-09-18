@@ -8,6 +8,12 @@ export const metadata = {
   description: 'National Central Sector Infrastructure Risk Intelligence & Early Warning System. MoSPI SIH 26103.',
 };
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export default function RootLayout({ children }) {
   return (
     <html
