@@ -9,7 +9,7 @@ const links = [
   { href: '/', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/projects', label: 'Projects', icon: Table2 },
   { href: '/benchmarks', label: 'Benchmarks', icon: BarChart3 },
-  { href: '/about', label: 'Documentation', icon: BookOpen },
+  { href: '/about', label: 'how it works', icon: BookOpen },
 ];
 
 export default function Navbar() {
